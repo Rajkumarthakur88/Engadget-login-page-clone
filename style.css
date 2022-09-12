@@ -1,0 +1,320 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: sans-serif;
+}
+
+.container {
+     width: 100vw;
+     height: 100vh;
+     background-color: black;
+     display: flex;
+}
+
+.bgimage {
+     width: 67%;
+     height: 100%;
+     /* background-image: url(engadget.jpg); */
+     background: #12c2e9;
+     /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+     /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     color: white;
+}
+
+.textarea {
+     text-align: center;
+}
+
+.textarea h1 {
+     font-size: 11vw;
+     font-weight: 500;
+     margin-bottom: 25px;
+}
+
+.textarea h2 {
+     font-size: 5vw;
+     font-weight: lighter;
+     margin-bottom: 16px;
+}
+
+.textarea p {
+     font-size: 1.6vw;
+     font-weight: 600;
+}
+
+.formcontainer {
+     width: 33%;
+     height: 100%;
+     background-color: white;
+}
+/* 7470987911 */
+.form {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     background-color: #fff;
+}
+
+.form img {
+     margin-top: 80px;
+     margin-bottom: 38px;
+     width: 27%;
+}
+
+.form h1 {
+     margin-bottom: 85px;
+     font-size: 2vw;
+}
+
+.emailbox {
+     width: 68%;
+     padding: 8px;
+     border: none;
+     border-bottom: 1px solid grey;
+     margin-bottom: 27px;
+}
+
+form .next {
+     width: 70%;
+     height: 48px;
+     background-color: #3399CC;
+     border: none;
+     border-radius: 2px;
+     margin-bottom: 28px;
+     color: white;
+     font-size: large;
+     cursor: pointer;
+     padding: 6px;
+}
+
+.inline {
+     width: 90%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.inline-right {
+     width: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.inline-left {
+     width: 50%;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+.inline-left input {
+     margin-right: 5px;
+}
+
+
+
+.createaccount {
+     margin-top: 15px;
+     margin-bottom: 12px;
+     width: 70%;
+     height: 50px;
+     background-color: transparent;
+     color: #3399CC;
+     border: 1px solid #3399CC;
+     border-radius: 2px;
+     cursor: pointer;
+     font-size: larger;
+}
+
+.p {
+     margin-bottom: 10px;
+}
+
+.google {
+     margin-bottom: 35px;
+
+     width: 70%;
+     height: 47px;
+     background-color: transparent;
+     border: 1px solid grey;
+     border-radius: 2px;
+     font-size: large;
+     cursor: pointer;
+}
+
+.footer {
+     display: flex;
+     justify-content: center;
+     justify-content: space-around;
+     align-items: center;
+}
+
+.form a {
+     color: #3399CC;
+     font-size: 16px;
+     margin-bottom: 7px;
+}
+
+/* media query */
+
+@media(max-width:450px) {
+
+     .container {
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          background-color: white;
+     }
+
+     .bgimage {
+          display: none;
+     }
+
+     .formcontainer {
+          width: 100%;
+          height: 100vh;
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+     .form{
+          width: 98%;
+          height: 96%;
+          border: 1px solid grey;
+          padding: 50px 0;
+     }
+     
+     .form h1 {
+          font-size: 2.5vw;
+     }
+     .form img{
+          width:33%
+     }
+     
+
+     .inline {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+     }
+
+     .inline-left {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 1px;
+     }
+
+     .inline-right {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+     .createaccount{
+          width: 70%;
+          padding: 1vw 0;
+     }
+     .google{
+          width: 70%;
+          padding: 1vw 0;
+     }
+   
+
+}
+
+
+
+@media(min-width:451px) and (max-width:850px) {
+
+     .container {
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 100px;
+          background-color: white;
+     }
+
+     .bgimage {
+          display: none;
+     }
+
+     .formcontainer {
+          width: 100vw;
+          height: 100vh;
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+     .form{
+          width: 82%;
+          height: 99%;
+          border: 1px solid grey;
+          padding: 50px 0;
+     }
+     
+     .form h1 {
+          font-size: 2.5vw;
+     }
+     .form img{
+          width:33%
+     }
+     
+
+     .inline {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+     }
+
+     .inline-left {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 1px;
+     }
+
+     .inline-right {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+     .createaccount{
+          width: 70%;
+          padding: 1vw 0;
+     }
+     .google{
+          width: 70%;
+          padding: 1vw 0;
+     }
+   
+
+}
